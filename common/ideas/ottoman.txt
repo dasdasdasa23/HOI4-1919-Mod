@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		OTT_armistice_of_mudros = {
+		
+			picture = ARG_infamous_decade
+			modifier = {
+				stability_factor = -0.5
+				neutrality_drift = -0.3
+				war_support_factor = -0.5
+				conscription_factor = -0.97
+			}
+
+		}
+
+}
+}

@@ -1,0 +1,646 @@
+﻿focus_tree = {
+	id = japan_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = jAP
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 5000 y = 1200 }
+
+#	focus = {
+#		id = CHI_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#	}
+#	}
+focus = {
+		id = JAP_land_of_the_rising_sun
+		icon = GFX_focus_jap_pacific_guardian
+		x = 8
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+focus = {
+		id = JAP_support_taisho_democracy_movement
+		icon = GFX_goal_support_democracy
+		x = -20
+		y = 1
+		cost = 10
+		relative_position_id = JAP_land_of_the_rising_sun
+		prerequisite = { focus = JAP_land_of_the_rising_sun }
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus =  JAP_power_to_peasants }
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_popularity = {
+   			 ideology = democratic
+   			 popularity = 0.1
+			}
+		}
+	}	
+focus = {
+		id = JAP_aftermath_of_rice_riots
+		icon = GFX_focus_generic_price_controls
+		x = -5
+		y = 1
+		cost = 5
+		relative_position_id = JAP_support_taisho_democracy_movement
+		prerequisite = { focus = JAP_support_taisho_democracy_movement }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+		535 = {
+			is_owned_and_controlled_by = JAP
+		}
+		}
+		completion_reward = {
+			remove_ideas = JAP_aftermath_of_rice_riots
+			add_political_power = 50
+			add_stability = 0.05
+		535 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 2
+			    instant_build = yes
+			}
+			
+		}
+		}
+	}
+focus = {
+		id = JAP_enact_universal_suffrage
+		icon = GFX_JAP_universal_suffrage
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JAP_support_taisho_democracy_movement
+		prerequisite = { focus = JAP_support_taisho_democracy_movement }
+		mutually_exclusive = { focus =  JAP_enact_universal_manhood_suffrage }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = JAP_universal_suffrage_idea
+			add_political_power = 150
+		}
+	}
+focus = {
+		id = JAP_enact_universal_manhood_suffrage
+		icon = GFX_goal_generic_neutrality_focus
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = JAP_support_taisho_democracy_movement
+		prerequisite = { focus = JAP_support_taisho_democracy_movement }
+		mutually_exclusive = { focus =  JAP_enact_universal_suffrage }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = JAP_universal_manhood_suffrage_idea
+			add_political_power = 100
+		}
+	}
+focus = {
+		id = JAP_proclaim_republic_of_japan
+		icon = GFX_focus_jap_pacific_guardian
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = JAP_enact_universal_suffrage
+		prerequisite = { focus = JAP_enact_universal_suffrage focus = JAP_enact_universal_manhood_suffrage }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		democratic > 0.4
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 150
+		set_politics = {
+		    ruling_party = democratic
+		    elections_allowed = no
+		}
+			hidden_effect = {
+		set_cosmetic_tag = JAP_DMC
+		country_event = japanmod.8
+		}
+		}
+	}
+focus = {
+		id = JAP_reign_of_kato_taaki
+		icon = GFX_SOV_the_triple_entente_ccp_2d_sov_compatibility
+		x = 0
+		y = 1
+		cost = 14.3
+		relative_position_id = JAP_proclaim_republic_of_japan
+		prerequisite = { focus = JAP_proclaim_republic_of_japan }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 200
+			country_event = japanmod.9
+		}
+	}
+focus = {
+		id = JAP_wakatsuki_reijiro
+		icon = GFX_SOV_the_triple_entente_ccp_2d_sov_compatibility
+		x = -10
+		y = 1
+		cost = 0
+		relative_position_id = JAP_reign_of_kato_taaki
+		prerequisite = { focus = JAP_reign_of_kato_taaki }
+		mutually_exclusive = { focus =  JAP_yukip_ozaki }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+        	available = {
+            	always = no
+        	}
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_yukip_ozaki
+		icon = GFX_SOV_the_triple_entente_ccp_2d_sov_compatibility
+		x = 0
+		y = 1
+		cost = 0
+		relative_position_id = JAP_reign_of_kato_taaki
+		prerequisite = { focus = JAP_reign_of_kato_taaki }
+		mutually_exclusive = { focus =  JAP_wakatsuki_reijiro }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+        	available = {
+            	always = no
+        	}
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_economy_of_japanese_republic
+		icon = GFX_focus_generic_economic_recovery
+		x = -5
+		y = 1
+		cost = 7.2
+		relative_position_id = JAP_yukip_ozaki
+		prerequisite = { focus = JAP_wakatsuki_reijiro focus = JAP_yukip_ozaki }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+		531 = {
+			is_owned_and_controlled_by = JAP
+		}
+		}
+		completion_reward = {
+		add_ideas = JAP_economy
+		531 = {
+		add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 4
+			    instant_build = yes
+			}
+			
+		}
+		}
+	}
+focus = {
+		id = JAP_naval_reforms
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = JAP_proclaim_republic_of_japan
+		prerequisite = { focus = JAP_proclaim_republic_of_japan }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+		535 = {
+			is_owned_and_controlled_by = JAP
+		}
+		}
+		completion_reward = {
+		add_ideas = JAP_republican_navy
+		535 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			    type = dockyard
+			    level = 2
+			    instant_build = yes
+			}
+			
+		}
+		}
+	}
+focus = {
+		id = JAP_japanese_republican_army
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 7
+		y = 1
+		cost = 5
+		relative_position_id = JAP_proclaim_republic_of_japan
+		prerequisite = { focus = JAP_proclaim_republic_of_japan }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = no
+		available = {
+		535 = {
+			is_owned_and_controlled_by = JAP
+		}
+		}
+		completion_reward = {
+				add_ideas = JAP_republican_army
+				remove_ideas = JAP_militarism
+		535 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			    type = dockyard
+			    level = 2
+			    instant_build = yes
+			}
+			
+		}
+		}
+	}
+focus = {
+		id = JAP_start_mobilization
+		icon = GFX_focus_generic_japanese_imperial_glory
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = JAP_japanese_republican_army
+		prerequisite = { focus = JAP_japanese_republican_army }
+		mutually_exclusive = { focus =  JAP_bastion_of_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_invade_fengtian_clique
+		icon = GFX_focus_AST_war_japan
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JAP_start_mobilization
+		prerequisite = { focus = JAP_start_mobilization }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_bastion_of_democracy
+		icon = GFX_focus_SWE_refuge_from_war
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = JAP_japanese_republican_army
+		prerequisite = { focus = JAP_japanese_republican_army }
+		mutually_exclusive = { focus =  JAP_start_mobilization }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_offer_protection_to_fengtian
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JAP_bastion_of_democracy
+		prerequisite = { focus = JAP_bastion_of_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_power_to_peasants
+		icon = GFX_focus_ITA_peasants_rise
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JAP_land_of_the_rising_sun
+		prerequisite = { focus = JAP_land_of_the_rising_sun }
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus =  JAP_support_taisho_democracy_movement }
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.1
+	hidden_effect = {
+		JAP = { country_event = { id = japanmod.1 } }
+			}
+		}
+	}
+focus = {
+		id = JAP_japanese_socialism
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 3
+		y = 1
+		cost = 0
+		relative_position_id = JAP_power_to_peasants
+		prerequisite = { focus = JAP_power_to_peasants }
+		mutually_exclusive = { focus =  JAP_japanese_communism }
+		ai_will_do = {
+			factor = 1
+		}
+        	available = {
+            	always = no
+        	}
+
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_towards_1920_elections_socialist
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JAP_japanese_socialism
+		prerequisite = { focus = JAP_japanese_socialism }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_japanese_communism
+		icon = GFX_focus_SWE_socialist_reforms
+		x = -3
+		y = 1
+		cost = 0
+		relative_position_id = JAP_power_to_peasants
+		prerequisite = { focus = JAP_power_to_peasants }
+		mutually_exclusive = { focus =  JAP_japanese_socialism }
+		ai_will_do = {
+			factor = 1
+		}
+        	available = {
+            	always = no
+        	}
+
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_towards_revolution
+		icon = GFX_focus_generic_spur_communist_revolutions
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JAP_japanese_communism
+		prerequisite = { focus = JAP_japanese_communism }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAP = { country_event = { id = japanmod.2 } }
+		}
+	}
+focus = {
+		id = JAP_fall_of_tokyo
+		icon = GFX_focus_GER_proletarian_solidarity
+		x = 0
+		y = 1
+		cost = 0
+		relative_position_id = JAP_towards_revolution
+		prerequisite = { focus = JAP_towards_revolution }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+		always = no
+		}
+		completion_reward = {
+		}
+	}
+focus = {
+		id = JAP_start_rebuilding
+		icon = GFX_focus_generic_communist_industry
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = JAP_fall_of_tokyo
+		prerequisite = { focus = JAP_fall_of_tokyo }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+		282 = {
+			is_owned_and_controlled_by = JAP
+		}
+			has_government = communism
+		}
+		completion_reward = {
+		282 = {
+		add_extra_state_shared_building_slots = 6
+			add_building_construction = {
+			    type = arms_factory
+			    level = 2
+			    instant_build = yes
+			}
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 3
+			    instant_build = yes
+			}
+			
+		}
+		}
+	}
+focus = {
+		id = JAP_communist_industry
+		icon = GFX_focus_generic_industry_2
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JAP_start_rebuilding
+		prerequisite = { focus = JAP_start_rebuilding }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+		282 = {
+			is_owned_and_controlled_by = JAP
+		}
+			has_government = communism
+		}
+		completion_reward = {
+		282 = {
+		add_extra_state_shared_building_slots =4
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 4
+			    instant_build = yes
+			}
+			
+		}
+		}
+	}
+focus = {
+		id = JAP_five_year_plan
+		icon = GFX_SOV_finish_the_five_year_plan_ccp_2d_sov_compatibility
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = JAP_start_rebuilding
+		prerequisite = { focus = JAP_start_rebuilding }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+		282 = {
+			is_owned_and_controlled_by = JAP
+		}
+			has_government = communism
+		}
+		completion_reward = {
+		282 = {
+		add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 3
+			    instant_build = yes
+			}
+			
+		}
+		}
+	}
+focus = {
+		id = JAP_rev_armed_forces
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JAP_fall_of_tokyo
+		prerequisite = { focus = JAP_fall_of_tokyo }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+		282 = {
+			is_owned_and_controlled_by = JAP
+		}
+			has_government = communism
+		}
+		completion_reward = {
+		remove_ideas = JAP_militarism
+		add_ideas = JAP_rev_armed_forces
+		282 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			    type = arms_factory
+			    level = 2
+			    instant_build = yes
+			}
+		}
+		}
+	}
+focus = {
+		id = JAP_invasion_of_korea
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		x = 0
+		y = 1
+		cost = 15
+		relative_position_id = JAP_rev_armed_forces
+		prerequisite = { focus = JAP_rev_armed_forces }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+		available = {
+			country_exists = KOR
+			has_government = communism
+		}
+		completion_reward = {
+		country_event = japanmod.6
+		}
+	}

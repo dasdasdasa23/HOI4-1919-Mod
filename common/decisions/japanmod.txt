@@ -1,0 +1,28 @@
+
+
+
+JAP_war = {
+	
+		my_mission = {
+		    activation = {
+			has_civil_war = yes
+		    }
+		    available = {
+			has_civil_war = no
+			has_war = yes
+		    }
+		    cancel_trigger = {
+			has_war = no
+		    }
+		    icon = mission_icon
+		    is_good = yes
+		    war_with_on_timeout = SOV
+		    days_mission_timeout = 100
+		    selectable_mission = yes
+		    complete_effect = {
+			add_ideas = my_idea
+		    }
+		    timeout_effect = {
+		    }
+		}
+	}

@@ -1,0 +1,119 @@
+﻿add_namespace = paris_peace_conference
+
+country_event = {
+	id = paris_peace_conference.1
+	title = paris_peace_conference.1.t
+	desc = paris_peace_conference.1.desc
+	picture = GFX_report_event_SWI_assembly_hall
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = paris_peace_conference.1.a
+		news_event = paris_peace_conference.2
+		if = {
+		    limit = {
+		    	country_exists = POL
+			GER = { owns_state = 86 }
+		    }
+		    86 = { transfer_state_to = POL set_demilitarized_zone = no }
+		}
+		if = {
+		    limit = {
+		    	country_exists = POL
+			GER = { owns_state = 807 }
+		    }
+		    807 = { transfer_state_to = POL }
+		}
+		if = {
+		    limit = {
+		    	country_exists = POL
+			GER = { owns_state = 85 }
+		    }
+		    85 = { transfer_state_to = DNZ set_demilitarized_zone = yes }
+		}
+		if = {
+		    limit = {
+		    	country_exists = DEN
+			GER = { owns_state = 912 }
+		    }
+		    912 = { transfer_state_to = DEN }
+		}
+		if = {
+		    limit = {
+		    	country_exists = FRA
+			GER = { owns_state = 989 }
+		    }
+		    989 = { transfer_state_to = FRA set_demilitarized_zone = no }
+		}
+		if = {
+		    limit = {
+		    	JAP = { has_government = neutrality }
+		    	country_exists = JAP
+			GER = { owns_state = 743 }
+		    }
+		    743 = { transfer_state_to = JAP }
+		}
+		if = {
+		    limit = {
+		    	country_exists = FRA
+			GER = { owns_state = 42 owns_state = 51 }
+		    }
+		    42 = { transfer_state_to = RHC }
+		    51 = { transfer_state_to = RHC }
+		}
+		}
+	}
+news_event = {
+    id = paris_peace_conference.2
+    title = {
+        text = paris_peace_conference.2.t
+    }
+    desc = {
+        text = paris_peace_conference.2.desc
+    }
+	option = {
+		name = paris_peace_conference.2.a
+		}
+    
+    picture = GFX_news_event_german_rally
+    
+    is_triggered_only = yes
+    major = yes
+        trigger = {
+        }
+}
+country_event = {
+	id = paris_peace_conference.3
+	title = paris_peace_conference.3.t
+	desc = paris_peace_conference.3.desc
+	picture = GFX_report_event_SWI_assembly_hall
+
+	is_triggered_only = yes
+	immediate = { set_country_flag = implementation_of_treaty_of_versailles clr_country_flag = treaty_of_versailles }
+
+	option = {
+		name = paris_peace_conference.3.a
+		news_event = paris_peace_conference.4
+		}
+	}
+news_event = {
+    id = paris_peace_conference.4
+    title = {
+        text = paris_peace_conference.4.t
+    }
+    desc = {
+        text = paris_peace_conference.4.desc
+    }
+	option = {
+		name = paris_peace_conference.4.a
+		}
+    
+    picture = GFX_news_event_SOV_supreme_soviet_bukharin
+    
+    is_triggered_only = yes
+    major = yes
+        trigger = {
+        }
+}

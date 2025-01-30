@@ -1,0 +1,82 @@
+ideas = {
+	country = {
+		JAP_universal_suffrage_idea = {
+		
+			picture = SPR_torchbearers_of_tomorrow
+			modifier = {
+				stability_factor = 0.3
+				democratic_drift = 0.3
+			}
+
+		}
+		JAP_universal_manhood_suffrage_idea = {
+		
+			picture = SOV_consolidate_power_ccp_sov_compatibility
+			modifier = {
+				stability_factor = 0.15
+				democratic_drift = 0.1
+			}
+
+		}
+		JAP_aftermath_of_rice_riots = {
+		
+			picture = generic_oppression
+			modifier = {
+				stability_factor = -0.1
+				communism_drift = 0.2
+			}
+
+		}
+		JAP_rev_armed_forces = {
+		
+			picture = generic_communist_army
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_core_defence_factor = 0.3
+				stability_factor = 0.1
+				communism_drift = 0.2
+				experience_gain_army_factor = 0.5
+				experience_gain_army = 0.05
+				conscription_factor = 1.5
+			}
+
+		}
+		JAP_republican_army = {
+		
+			picture = generic_japanese_conflict
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.4
+				democratic_drift = 0.1
+				experience_gain_army_factor = 0.5
+				experience_gain_army = 0.15
+				conscription_factor = 3.5
+			}
+
+		}
+		JAP_republican_navy = {
+		
+			picture = generic_navy_cruiser_warfare
+			modifier = {
+				navy_capital_ship_attack_factor = 0.3
+				repair_speed_factor = 0.3
+				navy_fuel_consumption_factor = -0.1
+				experience_gain_navy = 0.02
+				experience_gain_navy_factor = 0.3
+			}
+
+		}
+		JAP_economy = {
+		
+			picture = generic_navy_cruiser_warfare
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.3
+				production_speed_arms_factory_factor = -0.1
+			}
+
+		}
+}
+}

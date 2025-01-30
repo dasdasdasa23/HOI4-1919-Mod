@@ -1,0 +1,16 @@
+﻿characters = {
+	GER_friedrich = {
+		name = "GER_friedrich" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_friedrich
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1950.1.1.1"
+			id = -81
+		}
+	}
+}
+	

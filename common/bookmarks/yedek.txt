@@ -1,0 +1,29 @@
+bookmarks = {
+	bookmark = {
+		name = "sa"
+		desc = "sa"
+		date = 1919.1.1
+		picture = "GFX_select_date_1939"
+		default_country = "OTT"
+		default = yes
+		
+		FRA = {
+			history = FRA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+			
+		}
+		OTT = {
+			minor = yes
+		}
+		}
+	}

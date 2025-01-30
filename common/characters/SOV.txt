@@ -1,0 +1,16 @@
+characters = {
+	SOV_lenin = {
+		name = "SOV_lenin" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_sov_lenin
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1950.1.1.1"
+			id = -31
+		}
+	}
+}
+	

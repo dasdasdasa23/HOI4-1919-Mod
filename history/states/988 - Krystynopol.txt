@@ -1,0 +1,31 @@
+state = {
+	id = 988
+	name = "STATE_988"
+	
+	state_category = pastoral
+	manpower = 61043
+
+	resources = {
+		tungsten = 4
+	}
+
+	history = {
+		victory_points = {
+			536 1
+		}
+		owner = POL
+		add_core_of = WUK
+		add_core_of = UKR
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		536
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0 
+}

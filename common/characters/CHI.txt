@@ -1,0 +1,16 @@
+characters = {
+	Xu_Shichang = {
+		name = "Xu_Shichang" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_xu_shichang
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1950.1.1.1"
+			id = -1919
+		}
+	}
+}
+	

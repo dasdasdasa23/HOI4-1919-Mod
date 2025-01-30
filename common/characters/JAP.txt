@@ -1,0 +1,42 @@
+characters = {
+	JAP_taisho = {
+		name = "JAP_taisho" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_jap_taisho
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	JAP_kato = {
+		name = "JAP_kato" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_jap_kato
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	JAP_toshihiko = {
+		name = "JAP_toshihiko" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_jap_toshihiko
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+}
+	

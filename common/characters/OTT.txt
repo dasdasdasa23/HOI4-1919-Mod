@@ -1,0 +1,16 @@
+characters = {
+	OTT_mehmed_vi = {
+		name = "OTT_mehmed_vi" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ott_mehmed_vi
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+}
+	

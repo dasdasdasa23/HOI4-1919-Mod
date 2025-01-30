@@ -1,0 +1,30 @@
+state = {
+	id = 991
+	name = "STATE_991"
+	
+	state_category = large_city
+	manpower = 128463
+
+	resources = {
+	}
+
+	history = {
+		victory_points = {
+			13366 10 # Spandau
+		}
+		owner = GER
+		add_core_of = GER
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		13366
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0 
+}

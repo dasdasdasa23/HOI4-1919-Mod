@@ -1,0 +1,79 @@
+division_template = {
+	name = "bobyeongsadan"
+
+	division_names_group = KOR_REV_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+units = {
+	#Red Guardians
+	division = {
+		name = "1st bobyeongsadan"
+		location = 7125
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "42th bobyeongsadan"
+		location = 4052
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th bobyeongsadan"
+		location = 4056
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3rd bobyeongsadan"
+		location = 7125
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56th bobyeongsadan"
+		location = 1177
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th bobyeongsadan"
+		location = 11948
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th bobyeongsadan"
+		location = 11948
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th bobyeongsadan"
+		location = 7021
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12th bobyeongsadan"
+		location = 3981
+		division_template = "bobyeongsadan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+}

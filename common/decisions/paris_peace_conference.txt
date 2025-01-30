@@ -1,0 +1,55 @@
+paris_peace_conference = {
+
+treaty_of_versailles = {
+    activation = {
+        GER = { has_country_flag = treaty_of_versailles }
+    }
+    available = {
+    has_country_flag = treaty_of_versailles
+    NOT = {
+        country_exists = GER
+    }
+    }
+    cancel_trigger = {
+    has_country_flag = implementation_of_treaty_of_versailles
+    }
+    icon = GFX_decision_eng_trade_unions_support  
+    is_good = no
+    days_mission_timeout = 179
+    selectable_mission = no
+    timeout_effect = {
+    		if = {
+		    limit = {
+    tag = GER
+    }
+    GER = { country_event = paris_peace_conference.3 }	
+     }
+      }
+}
+implementation_of_treaty_of_versailles = {
+    activation = {
+        GER = { has_country_flag = implementation_of_treaty_of_versailles }
+    }
+    available = {
+    has_country_flag = implementation_of_treaty_of_versailles
+    NOT = {
+        country_exists = GER
+    }
+    }
+    cancel_trigger = {
+    }
+    icon = GFX_decision_eng_trade_unions_support  
+    is_good = no
+    days_mission_timeout = 197
+    selectable_mission = no
+    timeout_effect = {
+    		if = {
+		    limit = {
+    original_tag = GER
+    }
+    GER = { country_event = paris_peace_conference.1 }	
+     }
+      }
+}
+}
+

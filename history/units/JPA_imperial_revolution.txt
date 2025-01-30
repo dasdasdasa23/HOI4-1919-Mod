@@ -1,0 +1,72 @@
+division_template = {
+	name = "Teikoku Eihei"
+
+	division_names_group = JPA_REV_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery = { x = 2 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Hohei"
+
+	division_names_group = JPA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+units = {
+	division = {
+		name = "1st Teikoku Eihei"
+		location = 1182
+		division_template = "Teikoku Eihei"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2nd Teikoku Eihei"
+		location = 1182
+		division_template = "Teikoku Eihei"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1st Hohei"
+		location = 9998
+		division_template = "Hohei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division = {
+		name = "2nd Hohei"
+		location = 1097
+		division_template = "Hohei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division = {
+		name = "3rd Hohei"
+		location = 4122
+		division_template = "Hohei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division = {
+		name = "4th Hohei"
+		location = 7169
+		division_template = "Hohei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+}

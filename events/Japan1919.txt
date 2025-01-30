@@ -1,0 +1,263 @@
+﻿add_namespace = japanmod
+
+country_event = {
+	id = japanmod.1
+	title = japanmod.1.t
+	desc = japanmod.1.desc
+	picture = GFX_report_event_peasant_revolt
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = japanmod.1.a
+		ai_will_do = { 
+			base = 50 
+			}
+		set_party_name = {
+			ideology = communism
+			long_name = JAP_communist_party_long
+			name = JAP_communist_party
+	}
+		add_popularity = {
+    			ideology = communism
+    			popularity = 0.1
+		}
+		complete_national_focus = JAP_japanese_communism
+}
+
+
+	option = {
+		name = japanmod.1.b
+		ai_will_do = { 
+			base = 30 
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = JAP_socialist_party_long
+			name = JAP_socialist_party
+	}
+			add_popularity = {
+    			ideology = communism
+    			popularity = 0.15
+		}
+		complete_national_focus = JAP_japanese_socialism
+		}
+	}
+country_event = {
+	id = japanmod.2
+	title = japanmod.2.t
+	desc = japanmod.2.desc
+	picture = GFX_report_event_peasant_revolt
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = japanmod.2.a
+		hidden_effect = {
+		remove_ideas = JAP_aftermath_of_rice_riots
+		525 = { transfer_state_to = KOR }
+		527 = { transfer_state_to = KOR }
+		282 = { transfer_state_to = JPA add_core_of = JPA}
+		533 = { transfer_state_to = JPA add_core_of = JPA }
+		536 = { transfer_state_to = JPA add_core_of = JPA }
+		537 = { transfer_state_to = JPA add_core_of = JPA }
+		555 = { transfer_state_to = JPA add_core_of = JPA }
+		524 = { transfer_state_to = JPA add_core_of = JPA }
+		ai_will_do = { 
+			base = 50 
+			}
+		set_political_party = {
+    			ideology = communism
+    			popularity = 100
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+}
+		declare_war_on = {
+		    target = JPA
+		    type = annex_everything
+		}
+		news_event = japanmod.4
+		load_oob = JAP_revolution
+		set_cosmetic_tag = JAP_COMMUNIST_REV
+		KOR = {
+			load_oob = KOR_JAP_revolution
+			set_cosmetic_tag = KOR_COMMUNIST
+		set_political_party = {
+    			ideology = communism
+    			popularity = 100
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+}
+		}
+		JPA = {
+			load_oob = JPA_imperial_revolution
+			set_capital = {state = 282}
+		}
+	}
+}
+}
+country_event = {
+	id = japanmod.3
+	title = japanmod.3.t
+	desc = japanmod.3.desc
+	picture = GFX_report_event_peasant_revolt
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 2 }
+	trigger = {
+		tag = JAP
+		JAP = { controls_state = 282 }
+		has_government = communism
+		has_war_with = JPA
+}
+	option = {
+		name = japanmod.3.a
+		complete_national_focus = JAP_fall_of_tokyo
+		news_event = japanmod.5
+		hidden_effect = {
+		drop_cosmetic_tag = yes
+		}
+			set_cosmetic_tag = JAP_COMMUNIST
+			annex_country = {
+			    target = JPA
+			    transfer_troops = yes
+			}
+		}
+	}
+
+#NEWS
+news_event = {
+    id = japanmod.4
+    title = {
+        text = japanmod.4.t
+    }
+    desc = {
+        text = japanmod.4.desc
+    }
+	option = {
+		name = japanmod.4.a
+		}
+    picture = GFX_news_event_generic_army
+    
+    is_triggered_only = yes
+    major = yes
+        trigger = {
+            
+        }
+}
+news_event = {
+    id = japanmod.5
+    title = {
+        text = japanmod.5.t
+    }
+    desc = {
+        text = japanmod.5.desc
+    }
+    	option = {
+		name = japanmod.5.a
+		}
+    picture = GFX_news_event_ast_army
+    
+    is_triggered_only = yes
+    major = yes
+        trigger = {
+            
+        }
+}
+
+country_event = {
+	id = japanmod.6
+	title = japanmod.6.t
+	desc = japanmod.6.desc
+	picture = GFX_report_event_peasant_revolt
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = japanmod.6.a
+		hidden_effect = {
+				news_event = japanmod.7
+		}
+			load_oob = JAP_KOR_INV
+			JAP = {
+			    declare_war_on = {
+				target = KOR
+				type = annex_everything
+			    }
+			}
+		}
+	}
+news_event = {
+    id = japanmod.7
+    title = {
+        text = japanmod.7.t
+    }
+    desc = {
+        text = japanmod.7.desc
+    }
+    	option = {
+		name = japanmod.7.a
+		trigger = {
+		tag = JAP
+		}
+		}
+    	option = {
+		name = japanmod.7.b
+		trigger = {
+		NOT = { tag = JAP }
+		}
+		}
+    picture = GFX_news_event_generic_sign_treaty1
+    
+    is_triggered_only = yes
+    major = yes
+        trigger = {
+            
+        }
+}
+news_event = {
+    id = japanmod.8
+    title = {
+        text = japanmod.8.t
+    }
+    desc = {
+        text = japanmod.8.desc
+    }
+	option = {
+		name = japanmod.8.a
+		}
+    
+    picture = GFX_news_event_ast_army
+    
+    is_triggered_only = yes
+    major = yes
+        trigger = {
+        }
+}
+country_event = {
+	id = japanmod.9
+	title = japanmod.9.t
+	desc = japanmod.9.desc
+	picture = GFX_report_event_peasant_revolt
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = japanmod.9.a
+		hidden_effect = {
+		complete_national_focus = JAP_wakatsuki_reijiro
+		}
+		}
+	option = {
+		name = japanmod.9.b
+		hidden_effect = {
+		complete_national_focus = JAP_yukip_ozaki
+		}
+		}
+	}

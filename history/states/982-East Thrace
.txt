@@ -1,0 +1,21 @@
+state={
+	id=982
+	name="STATE_982"
+	provinces={
+		849 3879 6895 
+	}
+	
+	history= {
+		victory_points = {
+			849 5
+		}
+		owner = ZTS
+		add_core_of = OTT
+		add_core_of = ZTS
+		set_demilitarized_zone = yes
+	}
+	state_category = town
+	manpower=892146
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

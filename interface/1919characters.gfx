@@ -1,0 +1,42 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_zts_charles_harington"
+		texturefile = "gfx/leaders/ZTS/charles_harington.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ott_mehmed_vi"
+		texturefile = "gfx/leaders/OTT/mehmed_vi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_jbl_muhammed"
+		texturefile = "gfx/leaders/JBL/muhammed.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_xu_shichang"
+		texturefile = "gfx/leaders/CHI/xu_shichang.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_jap_taisho"
+		texturefile = "gfx/leaders/JAP/JAP_taisho.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_jap_kato"
+		texturefile = "gfx/leaders/JAP/JAP_kato.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_jap_toshihiko"
+		texturefile = "gfx/leaders/JAP/JAP_toshihiko.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sov_lenin"
+		texturefile = "gfx/leaders/SOV/SOV_lenin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ger_friedrich"
+		texturefile = "gfx/leaders/GER/GER_friedrich.dds"
+	}

@@ -1,0 +1,104 @@
+
+
+
+CHI_economy = {
+	
+	# Fight Inflation
+	CHI_fight_inflation  = {
+
+		priority = 10
+
+		icon = GFX_decision_SOV_the_workers_dictatorship
+
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			original_tag = CHI
+			OR = {
+				has_idea = CHI_mediocre_inflation
+				has_idea = CHI_low_inflation
+		}
+			has_completed_focus = CHI_economic_rebuilding 
+		} 
+		hidden_trigger = {
+			has_completed_focus = CHI_economic_rebuilding 
+		}
+	
+		available = {
+			original_tag = CHI
+			OR = {
+				has_idea = CHI_mediocre_inflation
+				has_idea = CHI_low_inflation
+		}
+		}
+		cost = 100
+
+		modifier = {
+		}
+		days_remove = 10
+		complete_effect = { 
+			if = {
+				limit = {
+					has_idea = CHI_mediocre_inflation
+				}
+			swap_ideas = {
+   				 remove_idea = CHI_mediocre_inflation
+    				add_idea = CHI_low_inflation
+			}
+			}
+			if = {
+				limit = {
+					has_idea = CHI_low_inflation
+				}
+			remove_ideas = {
+    				CHI_low_inflation
+			}
+			}
+		}
+	}
+	# Develop Anhui Steel Industry
+	CHI_develop_anhui_steel  = {
+
+		priority = 5
+
+		icon = GFX_decision_SOV_the_workers_dictatorship
+
+		ai_will_do = {
+			base = 50
+		}
+		allowed = {  
+			has_completed_focus = CHI_economic_reforms
+			has_full_control_of_state = 606
+		}
+	
+		available = {
+			original_tag = CHI
+		}
+		cost = 100
+
+		modifier = {
+		}
+		days_remove = 30
+		complete_effect = { 
+				606 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 4
+					add_resource = {
+						type = steel
+						amount = 20
+					}
+				}
+				}
+			}
+		}
+	}

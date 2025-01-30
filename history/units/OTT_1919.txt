@@ -1,0 +1,106 @@
+﻿division_template = {
+	name = "Kafkasya Fırkası"
+
+	division_names_group = OTT_CAU_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Piyade Fırkası"
+
+	division_names_group = OTT_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Süvari Fırkası"
+
+	division_names_group = OTT_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+units = {
+	#Ottoman Army
+	division = {
+		name = "10th Caucasian Division"
+		location = 7454
+		division_template = "Kafkasya Fırkası"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "9th Caucasian Division"
+		location = 9954
+		division_template = "Kafkasya Fırkası"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "11th Caucasian Division"
+		location = 864
+		division_template = "Kafkasya Fırkası"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "3rd Caucasian Division"
+		location = 10403
+		division_template = "Kafkasya Fırkası"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "12th Division"
+		location = 12376
+		division_template = "Piyade Fırkası"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Division"
+		location = 11871
+		division_template = "Piyade Fırkası"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "12th Cavalry Division"
+		location = 12416
+		division_template = "Süvari Fırkası"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "OTT"
+		}
+		requested_factories = 4
+		progress = 0.28
+		efficiency = 20
+	}
+}

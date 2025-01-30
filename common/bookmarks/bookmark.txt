@@ -1,0 +1,51 @@
+bookmarks = {
+	bookmark = {
+		name = "aftermath_of_armistice_of_compiegne_NAME"
+		desc = "aftermath_of_armistice_of_compiegne_DESC"
+		date = 1919.1.1
+		picture = "GFX_select_date_1939"
+		default_country = "JAP"
+		default = yes
+		
+		OTT = {
+			history = OTT_1919_DESC
+			ideology = neutrality
+			ideas={
+				OTT_armistice_of_mudros
+			}
+			focuses = {
+			}
+			
+		}
+		CHI = {
+			history = CHI_1919_DESC
+			ideology = neutrality
+			ideas={
+				CHI_political_instability
+				CHI_low_authority
+				CHI_lack_of_a_central_army
+			}
+			focuses = {
+				CHI_establishment_of_the_central_army
+				CHI_foundation_of_kuomintang
+				CHI_unite_the_factions
+			}
+			
+		}
+		JAP = {
+			history = JAP_1919_DESC
+			ideology = neutrality
+			ideas={
+				JAP_militarism
+				state_shintoism
+				JAP_zaibatsus
+			}
+			focuses = {
+				JAP_land_of_the_rising_sun
+				JAP_support_taisho_democracy_movement
+				JAP_japanese_communism
+			}
+			
+		}
+		}
+	}

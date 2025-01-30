@@ -1,0 +1,93 @@
+division_template = {
+	name = "Kankoku Paruchizan"
+
+	division_names_group = JAP_KOR_REV_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+units = {
+	division = {
+		name = "1st Kankoku Paruchizan Division"
+		location = 978
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "42th Kankoku Paruchizan Division"
+		location = 9936
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th Kankoku Paruchizan Division"
+		location = 11992
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3rd Kankoku Paruchizan Division"
+		location = 1054
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56th Kankoku Paruchizan Division"
+		location = 1054
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Kankoku Paruchizan Division"
+		location = 4052
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th Kankoku Paruchizan Division"
+		location = 7125
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th Kankoku Paruchizan Division"
+		location = 7125
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12th Kankoku Paruchizan Division"
+		location = 1177
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "74th Kankoku Paruchizan Division"
+		location = 4056
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "92th Kankoku Paruchizan Division"
+		location = 4056
+		division_template = "Kankoku Paruchizan"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+}

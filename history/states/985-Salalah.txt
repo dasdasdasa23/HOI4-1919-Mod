@@ -1,0 +1,15 @@
+state={
+	id=985
+	name="STATE_985"
+	provinces={
+		1947 8002 2103 
+	}
+	history = {
+
+		owner = OMA
+		add_core_of = OMA
+		}
+	state_category = pastoral
+	manpower=542376
+	buildings_max_level_factor=1.000
+	local_supplies=0.000

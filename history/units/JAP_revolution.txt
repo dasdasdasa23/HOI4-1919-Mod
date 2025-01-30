@@ -1,0 +1,121 @@
+division_template = {
+	name = "Kōeihei"
+
+	division_names_group = JAP_REV_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+units = {
+	#Red Guardians
+	division = {
+		name = "1st Kōeihei Division"
+		location = 7157
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "42th Kōeihei Division"
+		location = 7157
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4th Kōeihei Division"
+		location = 7157
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3rd Kōeihei Division"
+		location = 10015
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "56th Kōeihei Division"
+		location = 10015
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Kōeihei Division"
+		location = 1117
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "7th Kōeihei Division"
+		location = 1117
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9th Kōeihei Division"
+		location = 11930
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12th Kōeihei Division"
+		location = 11989
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "74th Kōeihei Division"
+		location = 11989
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "92th Kōeihei Division"
+		location = 11989
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "16th Kōeihei Division"
+		location = 11989
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd Kōeihei Division"
+		location = 11989
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "18th Kōeihei Division"
+		location = 12072
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "20th Kōeihei Division"
+		location = 12072
+		division_template = "Kōeihei"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+}

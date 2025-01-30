@@ -1,0 +1,33 @@
+state={
+	id=340
+	name="STATE_340"
+	history={
+		owner = ZTS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+		}
+		
+		victory_points = {
+			947 10
+		}
+		victory_points = {
+			9799 5
+		}
+		add_core_of = OTT
+		add_core_of = ZTS
+		set_demilitarized_zone = yes
+	}
+	
+	resources={
+		chromium=39.000
+	}
+	provinces={
+		947 3851 6864 6912 9887 11811 11829 11867 
+	}
+	manpower=1077853
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

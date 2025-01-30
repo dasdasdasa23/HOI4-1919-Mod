@@ -1,0 +1,16 @@
+characters = {
+	ZTS_charles_harington = {
+		name = "ZTS_charles_harington" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_zts_charles_harington
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+}
+	

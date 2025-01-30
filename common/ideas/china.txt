@@ -1,0 +1,163 @@
+ideas = {
+	country = {
+		CHI_lack_of_a_central_army = {
+		
+			picture = SPR_disbanded_army
+			modifier = {
+				army_attack_factor = -0.5
+				army_attack_against_major_factor = -0.2
+				army_defence_factor = -0.2
+				stability_factor = -0.12
+				neutrality_drift = -0.3
+				war_support_factor = -1
+				conscription_factor = -0.99
+			}
+
+		}
+		CHI_newly_created_army = {
+		
+			picture = MEX_politicised_army
+			modifier = {
+				army_attack_factor = -0.2
+				army_attack_against_major_factor = -0.05
+				army_defence_factor = -0.2
+				stability_factor = -0.05
+				neutrality_drift = -0.1
+				war_support_factor = -0.5
+				conscription_factor = -0.95
+			}
+
+		}
+		CHI_army = {
+		
+			picture = MEX_revolutionary_army
+			modifier = {
+				army_attack_factor = 0.1
+				army_attack_against_major_factor = -0.3
+				army_defence_factor = 0.2
+				stability_factor = 0.05
+				neutrality_drift = 0.1
+				war_support_factor = 0.5
+				conscription_factor = -0.98
+			}
+
+		}
+		CHI_political_instability = {
+		
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.2
+				neutrality_drift = -0.3
+				war_support_factor = -0.5
+			}
+
+		}
+		CHI_low_authority = {
+		
+			picture = chi_warlord_integration
+			modifier = {
+				stability_factor = -0.1
+				neutrality_drift = -0.2
+				war_support_factor = -0.1
+				industrial_factory_donations = -14
+				military_factory_donations = -6
+				consumer_goods_factor = 0.3
+				surrender_limit = -0.2
+				political_power_gain = -1
+			}
+	
+		}
+		CHI_mediocre_authority = {
+		
+			picture = chi_warlord_integration2
+			modifier = {
+				stability_factor = -0.1
+				neutrality_drift = -0.1
+				war_support_factor = -0.1
+				industrial_factory_donations = -12
+				military_factory_donations = -5
+				consumer_goods_factor = 0.25
+				surrender_limit = -0.2
+				political_power_gain = -0.8
+			}
+	
+		}
+		CHI_famine = {
+		
+			picture = raj_risk_of_famine
+			modifier = {
+				stability_factor = -0.1
+				neutrality_drift = -0.2
+				consumer_goods_factor = 0.1
+				monthly_population = -1.8
+			}
+	
+		}
+		CHI_soviet_military_academy = {
+		
+			picture = socialist_science_focus
+			modifier = {
+				stability_factor = -0.05
+				communism_drift = 0.2
+				consumer_goods_factor = -0.1
+				army_attack_factor = 0.05
+			}
+	
+		}
+		CHI_american_missionary_schools = {
+		
+			picture = usa_desegregation_2
+			modifier = {
+				stability_factor = -0.15
+				democracratic_drift = 0.2
+				consumer_goods_factor = -0.15
+			}
+	
+		}
+		CHI_hyper_inflation = {
+		
+			picture = chi_hyper_inflation5
+			modifier = {
+				stability_factor = -0.20
+				consumer_goods_factor = 0.3
+			}
+	
+		}
+		CHI_high_inflation = {
+		
+			picture = chi_hyper_inflation4
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.25
+			}
+	
+		}
+		CHI_mediocre_inflation = {
+		
+			picture = chi_hyper_inflation2
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.15
+			}
+	
+		}
+		CHI_low_inflation = {
+		
+			picture = chi_hyper_inflation
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.1
+			}
+	
+		}
+		CHI_traditional_bureaucracy = {
+		
+			picture = citizen_militia_2
+			modifier = {
+				stability_factor = -0.5
+				consumer_goods_factor = 0.1
+			}
+	
+		}
+}
+}
