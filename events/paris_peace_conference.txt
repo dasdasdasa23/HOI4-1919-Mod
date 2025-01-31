@@ -63,6 +63,12 @@ country_event = {
 		    42 = { transfer_state_to = RHC }
 		    51 = { transfer_state_to = RHC }
 		}
+		FRA = {
+		set_autonomy = {
+		    target = RHC
+		    autonomous_state = autonomy_occupied_zone
+		}
+		}
 		}
 	}
 news_event = {

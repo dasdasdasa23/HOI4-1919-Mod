@@ -1,5 +1,16 @@
 ﻿capital = 16 # Paris/Ile de France
-
+	set_autonomy = {
+		target = FWA
+		autonomous_state = autonomy_colonial_federation
+	}
+	set_autonomy = {
+		target = FEA
+		autonomous_state = autonomy_colonial_federation
+	}
+	set_autonomy = {
+		target = TOC
+		autonomous_state = autonomy_occupied_zone
+	}
 if = {
 	limit = {
 		NOT = {

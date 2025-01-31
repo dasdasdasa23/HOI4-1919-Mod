@@ -109,29 +109,6 @@ IF = {
 }
 
 ### SETUP NATIONAL SPIRITS NO WW ###
-IF = {
-	limit = {
-		AND = {
-			has_dlc = "Death or Dishonor"
-			NOT = {
-				has_dlc = "Gotterdammerung"
-			}
-		}
-	}
-	add_ideas = {
-		disarmed_nation
-	}
-	IF = {
-		limit = { has_dlc = "Arms Against Tyranny" }
-		add_ideas = { HUN_treaty_of_triannon_aat }
-	}
-	IF = {
-		limit = {
-			NOT = { has_dlc = "Arms Against Tyranny" }
-		}
-		add_ideas = { HUN_treaty_of_triannon }
-	}
-}
 
 ### SETUP HUNGARO-GERMAN RELATIONS AND NATIONAL SPIRITS ###
 IF = {

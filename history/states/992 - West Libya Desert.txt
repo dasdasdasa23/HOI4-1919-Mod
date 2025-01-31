@@ -1,0 +1,26 @@
+state = {
+	id = 992
+	name = "STATE_992"
+	
+	state_category = pastoral
+	manpower = 1743
+	impassable = yes
+	
+	resources = {
+	}
+
+	history = {
+		owner = FRA
+		add_core_of = LBA
+		
+		buildings = {
+		}
+	}
+
+	provinces = {
+		5004 12022
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0 
+}

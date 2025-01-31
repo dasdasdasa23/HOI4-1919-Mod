@@ -1,3 +1,6 @@
+TOC = "countries/Territory of Cameroun.txt"
+FEA = "countries/French Equatorial Africa.txt"
+FWA = "countries/French West Africa.txt"
 SPL = "countries/Spartacus League.txt"
 RHC = "countries/Rhineland High Commission.txt"
 ESO = "countries/Eastern Okraina.txt"

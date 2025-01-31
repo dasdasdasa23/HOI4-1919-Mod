@@ -39,6 +39,11 @@ GER = { load_oob = "GER_uprising_freikorps" }
 }
 SPL = { change_tag_from = GER }
 GER = { load_oob = "GER_uprising_freikorps" }
+989 = { set_demilitarized_zone = yes }
+42 = { set_demilitarized_zone = yes }
+51 = { set_demilitarized_zone = yes }
+86 = { set_demilitarized_zone = yes }
+188 = { set_demilitarized_zone = yes }
 }
 	}
 country_event = {
